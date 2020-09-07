@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<link rel="stylesheet" type="text/css" href="soal1.css">
+	<script src="soal1.js"></script>
+</head>
+<body onload="clear()" bgcolor="#D5D5D5">
+	<br><hr/>
+	<table align="center">
+		<tr>
+			<td><font size="5">Nama</font></td>
+			<td><font size="5">:</font></td>
+			<td><font size="5">Luthfi Januar Aulia</font></td>
+		</tr>
+		<tr>
+			<td><font size="5">NIM</font></td>
+			<td><font size="5">:</td>
+			<td><font size="5">41518120105</td>
+		</tr>
+		<tr>
+			<td><font size="5">Jurusan</font></td>
+			<td><font size="5">:</font></td>
+			<td><font size="5">Teknik Informatika</font></td>
+		</tr>
+	</table><hr /><br><br>
+	<div class="satu">
+		<form id="kalkulator" name="kalkulator">
+		<table align="center" width="600" height=300 bgcolor="#ece9d8">
+			<tr>
+				<td colspan="5"><input name="hasil" class="dua" readonly="readonly"></td>
+			</tr>
+		</form>
+			<tr>
+				<td>
+					<div class="tiga1"><input type="button" class="button" name="7" value="7" onclick="insert(7)"></input></div>
+					<div class="tiga"><input type="button" class="button" name="8" value="8" onclick="insert(8)"></input></div>
+					<div class="tiga"><input type="button" class="button" name="9" value="9" onclick="insert(9)"></input></div>
+					<div class="tiga"><input type="button" class="button1" name="+/-" value="+/-" onclick="insert('-')"></input></div>
+					<div class="tiga"><button class="button2" name="C" onclick="clear()">C</button></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="tiga1"><input type="button" class="button10" name="4" value="4" onclick="insert(4)"></input></div>
+					<div class="tiga"><input type="button" name="5" class="button10" value="5" onclick="insert(5)"></input></div>
+					<div class="tiga"><input type="button" class="button10" name="6" value="6" onclick="insert(6)"></input></div>
+					<div class="tiga"><input type="button" class="button3" name="-" value="-" onclick="insert('-')"></input></div>
+					<div class="tiga"><input type="button" class="button4" name="*" value="*" onclick="insert('*')"></input></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="tiga1"><input type="button" class="button10" name="1" value="1" onclick="insert(1)"></input></div>
+					<div class="tiga"><input type="button" class="button10" name="2" value="2" onclick="insert(2)"></input></div>
+					<div class="tiga"><input type="button" class="button10" name="3" value="3" onclick="insert(3)"></input></div>
+					<div class="tiga"><input type="button" class="button5" name="+" value="+" onclick="insert('+')"></input></div>
+					<div class="tiga"><input type="button" class="button11" name="/" value="/" onclick="insert('/')"></input></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="tiga1"><input type="button" class="button6" name="%" value="%" onclick="insert('%')"></input></div>
+					<div class="tiga"><input type="button" class="button7" name="0" value="0" onclick="insert('0')"></input></div>
+					<div class="tiga"><input type="button" class="button8" name="," value="," onclick="insert(',')"></input></div>
+					<div class="empat"><input type="button" class="button9" name="=" value="=" onclick="equal()"></input></div>
+				</td>
+			</tr>
+		</table>
+		</form>
+	</div>
+</body>
+</html>
